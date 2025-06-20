@@ -1,38 +1,34 @@
  
- class Car {
-    private String make;
-    private String model;
-    int year;
+ class Student {
+    private String name;
+    private int age;
+    private String batch;
 
    //Setter method
-   public void setString(String make, String model){
-        this.make = make;
-        this.model = model;
+   public void setter(String name, String batch,int age){
+        this.name = name;
+        this.batch = batch;
+        this.age = age;
         
    }
-   public void setInt(int year){
-        this.year = year;
-   }
-
+  
    //Getter method
    public void getter(){
-    System.out.println("Make : " + this.make);
-    System.out.println("Model : " + this.model);
-    System.out.println("Year : " + this.year);
+    System.out.println("Make : " + this.name);
+    System.out.println("Model : " + this.batch);
+    System.out.println("Year : " + this.age);
    }
 
    
 }
-class lab12{
-public static void main(String[] args) {
+public class Main{
+    public static void main(String[] args) {
     
-    Car obj = new Car();
-    obj.setString("BMW", "R9");
-    obj.setInt(1999);
-
+    Student obj = new Student();
+    obj.setter("govinda", "2019",21);
     obj.getter();
 
-}
+    }
 }
 
 
